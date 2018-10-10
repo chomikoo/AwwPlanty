@@ -1,0 +1,49 @@
+{
+  "name": "awwplanty",
+  "version": "1.0.0",
+  "description": "PSD2HTML",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chomikoo/AwwPlanty.git"
+  },
+  "keywords": [
+    "psd",
+    "html",
+    "css",
+    "scss",
+    "js",
+    "es6",
+    "excercising"
+  ],
+  "author": "SzymonTrzepla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chomikoo/AwwPlanty/issues"
+  },
+  "homepage": "https://github.com/chomikoo/AwwPlanty#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "browser-sync": "^2.24.7",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-babel-minify": "^0.4.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
+    "gulp-uncss": "^1.0.6",
+    "gulp-useref": "^3.1.5",
+    "gulp-util": "^3.0.8",
+    "run-sequence": "^2.2.1"
+  }
+}
