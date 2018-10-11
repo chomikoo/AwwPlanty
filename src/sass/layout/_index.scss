@@ -59,17 +59,19 @@ body {
 	$frame: &;
 	position: relative;
 	padding: 0;
-
+	
 	&__bg {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
 		transform: translate(-20px, -20px);
+		pointer-events: none;
 
 	}
 	&--right {
 		max-height: 460px;
-		transform: translateX(20px);
+		left: 20px;
+		// transform: translateX(20px);
 		#{$frame}__bg {
 			transform: translate(20px, 20px);
 		}
@@ -192,7 +194,7 @@ body {
 	&__bg {
 		margin: 15px auto 100px;
 		max-width: 500px;
-
+		transition: all 0.05s linear;
 		// transform: translateX(-25px);
 	}
 
@@ -204,17 +206,19 @@ body {
 		z-index: 1;
 
 		max-width: 450px;
+		pointer-events: none;
 	}
 
 	@include breakpoint(md) {
 		margin: 40px auto 10px;
 		&__bg {
 			margin: 0;
-			transform: translateX(-20px);
+			// transform: translateX(-20px);
+			left: -20px;
 		}
 
 		&__phone {
-			transform: translate(-50%, 90px);
+			transform: translate(-50%, 10px);
 		}
 
 	}
@@ -227,7 +231,9 @@ body {
 		}
 
 		&__bg {
-			transform: translateX(-85px);
+			// transform: translateX(-85px);
+			left: -85px;
+
 		}
 	}
 }

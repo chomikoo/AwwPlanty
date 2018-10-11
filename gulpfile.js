@@ -4,7 +4,6 @@ const gulp = require('gulp'),
     cssnano = require('gulp-cssnano'),
     rename = require('gulp-rename'),
     plumber = require('gulp-plumber'),
-    notify = require('gulp-notify'),
     runSequence = require('run-sequence'),
     wait = require('gulp-wait'),
 
@@ -43,12 +42,9 @@ gulp.task('browserSync', () => {
 //================
 
 
-gulp.task('styles', function() {
+gulp.task('styles', function () {
     return gulp.src('src/sass/**/*.scss')
         .pipe(wait(200))
-        // .pipe(plumber({
-        //     errorHandler: notify.onError('Error: <%= error.message %>')
-        // }))
         .pipe(sourcemaps.init())
         .pipe(sass({
             errLogToConsole: true,
@@ -64,9 +60,6 @@ gulp.task('styles', function() {
         .pipe(sourcemaps.write('./maps'))
         .pipe(plumber.stop())
         .pipe(gulp.dest('dist/css'))
-        // .pipe(notify({
-        //     message: 'TASK: "styles" Completed! 💯',
-        // }))
         .pipe(browserSync.stream())
 });
 
@@ -77,6 +70,7 @@ gulp.task('styles', function() {
 gulp.task('scripts', () => {
 
     return gulp.src([
+            'src/js/vendors/aos.js',
             'src/js/script.js'
         ])
         .pipe(concat('script.min.js'))
@@ -110,13 +104,13 @@ gulp.task('images', () => {
 
 gulp.task('watch', ['browserSync', 'styles'], () => {
     gulp.watch('src/sass/**/*.scss', ['styles'], browserSync.reload());
-    gulp.watch('src/js/**/*.js', ['scripts'] , browserSync.reload());
+    gulp.watch('src/js/**/*.js', ['scripts'], browserSync.reload());
     gulp.watch('src/**/*.html', ['copy'], browserSync.reload());
 })
 
 
 gulp.task('default', function (callback) {
-    runSequence(['watch', 'styles','scripts', 'browserSync'],
+    runSequence(['watch', 'styles', 'scripts', 'browserSync'],
         callback)
 });
 
