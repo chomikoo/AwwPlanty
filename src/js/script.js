@@ -3,6 +3,9 @@
 	
 	console.log('Hello from script.js ');
 
-	AOS.init();
+	AOS.init({
+		easing: 'ease-in-out-quart',
+		duration: 600
+	});
 
 })()
