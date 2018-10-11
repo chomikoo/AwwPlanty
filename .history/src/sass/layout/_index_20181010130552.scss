@@ -1,0 +1,12 @@
+body {
+	background-color: $white; 
+	    
+}
+
+
+.header {
+	&__logo {
+		background-image: url('../../svg/planty-logo.svg');
+		text-indent: -99999px;
+	}
+}

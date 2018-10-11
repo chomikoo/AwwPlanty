@@ -1,0 +1,11 @@
+body {
+	background-color: $white; 
+	    
+}
+
+
+.header {
+	&__logo {
+		background-image: url('svg/project-logo.svg');
+	}
+}

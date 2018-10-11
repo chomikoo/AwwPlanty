@@ -1,0 +1,74 @@
+body {
+	background-color: $white; 
+	font-family: $f-muli;
+	overflow-x: hidden;
+}
+
+.responsive-img {
+	width: 100%;
+	height: auto;
+}
+
+.navbar {
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		list-style-type: none;
+	}
+
+	&__link {
+		display: inline-block;
+		padding: 20px 0;
+		text-decoration: none;
+		color: $black;
+		font-family: $f-playfair;
+		font-weight: bold;
+		font-size: 18px;
+
+	
+
+	}
+}
+
+.header {
+	
+	&__logo {
+		
+		display: block;
+		width: 350px;
+		height: 150px;       
+		
+		width: 270px;
+		background-image: url('../../svg/planty-logo.svg');
+		background-repeat: no-repeat;
+		text-indent: -119988px;
+		text-align: left;
+		overflow: hidden; 
+	}  
+
+	&__title {
+		position: relative;
+	}
+	
+	&__subtitle {
+		position: absolute;
+		bottom : 0;
+		left: 20px;
+
+		font-size: 12px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+} 
+
+
+.hero {
+
+	&__bg {
+		background-image: url(../../img/img-top.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}

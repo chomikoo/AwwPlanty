@@ -44,6 +44,7 @@
     "gulp-uncss": "^1.0.6",
     "gulp-useref": "^3.1.5",
     "gulp-util": "^3.0.8",
+    "gulp-wait": "0.0.2",
     "run-sequence": "^2.2.1"
   }
 }

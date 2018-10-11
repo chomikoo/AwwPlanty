@@ -1,0 +1,17 @@
+body {
+	background-color: $white; 
+	    
+}
+
+
+.header {
+	&__logo {
+		display: block;
+		width: 250px;
+		background-image: url('../../svg/planty-logo.svg');
+		background-repeat: no-repeat;
+		text-indent: -119988px;
+		text-align: left;
+		overflow: hidden;
+	}
+}

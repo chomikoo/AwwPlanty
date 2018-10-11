@@ -1,0 +1,110 @@
+body {
+	background-color: $white; 
+	font-family: $f-muli;
+	overflow-x: hidden;
+}
+
+.responsive-img {
+	width: 100%;
+	height: auto;
+}
+
+.text {
+	line-height: 1.2;
+}
+
+.btn {
+	border: none;
+	background: none;
+	font-family: $f-muli;
+	&--hero {
+		background-color: $c-green-light;
+	}
+}
+
+.navbar {
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		list-style-type: none;
+	}
+
+	&__link {
+		display: inline-block;
+		padding: 20px 0;
+		text-decoration: none;
+		color: $black;
+		font-family: $f-playfair;
+		font-weight: bold;
+		font-size: 18px;
+
+	
+
+	}
+}
+
+.header {
+	
+	&__logo {
+		
+		display: block;
+		// width: 350px;
+		
+		width: 320px;
+		height: 115px;       
+		background-image: url('../../svg/planty-logo.svg');
+		background-repeat: no-repeat;
+		text-indent: -119988px;
+		text-align: left;
+		overflow: hidden; 
+	}  
+
+	&__title {
+		position: relative;
+	}
+	
+	&__subtitle {
+		position: absolute;
+		bottom: 5px;
+		left: 45px;
+
+		font-size: 12px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+} 
+
+
+.hero {
+
+	&__bg {
+		position: relative;
+
+		margin-bottom: 90px;
+
+		background-image: url(../../img/img-top.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		z-index: 1;
+		
+		&:after {
+			content: "";
+			position: absolute;
+			top: 15px;
+			left: 15px;
+			z-index: -1;
+			width: 100%;
+			height: 100%;
+			
+			border: 5px solid  $c-green-light;
+		}
+	}
+
+	&__phone {
+		transform: translate(0, 110px);
+		z-index: 2;
+	}
+}
