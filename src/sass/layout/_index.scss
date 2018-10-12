@@ -70,8 +70,11 @@ body {
 	}
 	&--right {
 		max-height: 460px;
-		left: 20px;
+		left: 0;
 		// transform: translateX(20px);
+		@include breakpoint(md) {
+			left: 20px;
+		}
 		#{$frame}__bg {
 			transform: translate(20px, 20px);
 		}
@@ -128,11 +131,9 @@ body {
 
 	&__logo {
 		display: block;
-		// width: 350px;
-
 		max-width: 320px;
 		height: 95px;
-		background-image: url('../../svg/planty-logo.svg');
+		background-image: url('../svg/planty-logo.svg');
 		background-repeat: no-repeat;
 		text-indent: -119988px;
 		text-align: left;
@@ -195,7 +196,6 @@ body {
 		margin: 15px auto 100px;
 		max-width: 500px;
 		transition: all 0.05s linear;
-		// transform: translateX(-25px);
 	}
 
 	&__phone {
@@ -213,7 +213,6 @@ body {
 		margin: 40px auto 10px;
 		&__bg {
 			margin: 0;
-			// transform: translateX(-20px);
 			left: -20px;
 		}
 
@@ -231,7 +230,6 @@ body {
 		}
 
 		&__bg {
-			// transform: translateX(-85px);
 			left: -85px;
 
 		}
@@ -249,8 +247,8 @@ body {
 
 	height: 300px;
 	width: 100%;
-	@include bg-fullImage('../../img/bg.jpg');
-	@include retina('../../img/bg@2x.jpg');
+	@include bg-fullImage('../img/bg.jpg');
+	@include retina('../img/bg@2x.jpg');
 
 	&__quote {
 		padding: 60px;
