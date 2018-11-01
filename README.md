@@ -1,4 +1,4 @@
-![AwwPlanty Header](img/screenshot.png)
+![AwwPlanty Header](img/aww.png)
 # Project Name
 > AwwPlanty 
 
