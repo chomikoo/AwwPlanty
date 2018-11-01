@@ -1,16 +1,12 @@
-![AwwPlanty Header](./img/screenshot.png)
+![AwwPlanty Header](img/screenshot.png)
 # Project Name
 > AwwPlanty 
 
 ## Table of contents
 * [General info](#general-info)
-* [Screenshots](#screenshots)
 * [Technologies](#technologies)
-* [Setup](#setup)
-* [Features](#features)
-* [Status](#status)
 * [Inspiration](#inspiration)
-* [Contact](#contact)
+
 
 ## General info
 Practicing in PSD2HTML
