@@ -1,7 +1,7 @@
 const gulp = require('gulp'),
     sass = require('gulp-sass'),
 
-    cssnano = require('gulp-cssnano'),
+    // cssnano = require('gulp-cssnano'),
     rename = require('gulp-rename'),
     plumber = require('gulp-plumber'),
     runSequence = require('run-sequence'),
@@ -10,14 +10,14 @@ const gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     autoprefixer = require('gulp-autoprefixer'),
     imagemin = require('gulp-imagemin'),
-    useref = require('gulp-useref'),
-    gulpif = require('gulp-if'),
-    uglify = require('gulp-uglify'),
+    // useref = require('gulp-useref'),
+    // gulpif = require('gulp-if'),
+    // uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
     gutil = require('gulp-util'),
-    babel = require('gulp-babel'),
+    // babel = require('gulp-babel'),
     babili = require('gulp-babel-minify'),
-    uncss = require('gulp-uncss'),
+    // uncss = require('gulp-uncss'),
     browserSync = require('browser-sync').create();
 
 
