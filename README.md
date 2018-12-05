@@ -1,6 +1,6 @@
 ![AwwPlanty Header](img/aww.png)
 # Project Name
-> AwwPlanty 
+> AwwPlanty https://chomikoo.github.io/AwwPlanty/dist/
 
 ## Table of contents
 * [General info](#general-info)
